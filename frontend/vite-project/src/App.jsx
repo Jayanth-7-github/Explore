@@ -16,7 +16,7 @@ function App() {
   const [addError, setAddError] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/cities")
+    fetch("https://explore-2u3c.onrender.com/api/cities")
       .then((res) => res.json())
       .then((data) => setCities(data));
   }, []);
