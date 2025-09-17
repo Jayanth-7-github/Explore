@@ -1,0 +1,1112 @@
+[
+  {
+    "id": 1,
+    "name": "Delhi",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "India Gate",
+        "description": "War memorial and iconic landmark."
+      },
+      {
+        "id": 2,
+        "name": "Rashtrapati Bhavan",
+        "description": "Official residence of the President."
+      },
+      {
+        "id": 3,
+        "name": "Rajpath",
+        "description": "Ceremonial boulevard in central Delhi."
+      },
+      {
+        "id": 4,
+        "name": "National Museum",
+        "description": "Showcases India’s rich history."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Agra",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Taj Mahal",
+        "description": "One of the Seven Wonders of the World."
+      },
+      {
+        "id": 2,
+        "name": "Agra Fort",
+        "description": "UNESCO World Heritage site."
+      },
+      {
+        "id": 3,
+        "name": "Mehtab Bagh",
+        "description": "Garden with Taj Mahal views."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Jaipur",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Hawa Mahal",
+        "description": "Palace of Winds."
+      },
+      {
+        "id": 2,
+        "name": "City Palace",
+        "description": "Royal residence and museum."
+      },
+      {
+        "id": 3,
+        "name": "Jantar Mantar",
+        "description": "Astronomical observatory."
+      },
+      {
+        "id": 4,
+        "name": "Johari Bazaar",
+        "description": "Jewelry & textiles market."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Amritsar",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Golden Temple",
+        "description": "Most sacred Sikh shrine."
+      },
+      {
+        "id": 2,
+        "name": "Jallianwala Bagh",
+        "description": "Historic massacre site."
+      },
+      {
+        "id": 3,
+        "name": "Partition Museum",
+        "description": "History of India’s partition."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Varanasi",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Kashi Vishwanath Temple",
+        "description": "One of 12 Jyotirlingas."
+      },
+      {
+        "id": 2,
+        "name": "Dashashwamedh Ghat",
+        "description": "Main ghat for Ganga Aarti."
+      },
+      {
+        "id": 3,
+        "name": "Manikarnika Ghat",
+        "description": "Sacred cremation ghat."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Mumbai",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Gateway of India",
+        "description": "Colonial-era monument."
+      },
+      {
+        "id": 2,
+        "name": "Taj Mahal Palace Hotel",
+        "description": "Luxury heritage hotel."
+      },
+      {
+        "id": 3,
+        "name": "Colaba Causeway",
+        "description": "Street shopping hub."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Pune",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Shaniwar Wada",
+        "description": "Historic Maratha fort."
+      },
+      {
+        "id": 2,
+        "name": "Dagdusheth Halwai Ganpati",
+        "description": "Famous Ganesh temple."
+      },
+      {
+        "id": 3,
+        "name": "Raja Dinkar Kelkar Museum",
+        "description": "Museum of art & culture."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Udaipur",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "City Palace",
+        "description": "Royal palace complex."
+      },
+      {
+        "id": 2,
+        "name": "Lake Pichola",
+        "description": "Scenic lake with palaces."
+      },
+      {
+        "id": 3,
+        "name": "Jagdish Temple",
+        "description": "Indo-Aryan style temple."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Ahmedabad",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Sabarmati Ashram",
+        "description": "Gandhi’s residence."
+      },
+      {
+        "id": 2,
+        "name": "Sidi Saiyyed Mosque",
+        "description": "Famous stone lattice windows."
+      },
+      {
+        "id": 3,
+        "name": "Jama Masjid",
+        "description": "Historic mosque in old city."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Goa",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Basilica of Bom Jesus",
+        "description": "UNESCO World Heritage church."
+      },
+      {
+        "id": 2,
+        "name": "Se Cathedral",
+        "description": "Largest church in Asia."
+      },
+      {
+        "id": 3,
+        "name": "Church of St. Cajetan",
+        "description": "Modeled after St. Peter’s Basilica."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Chennai",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Marina Beach",
+        "description": "Longest urban beach in India."
+      },
+      {
+        "id": 2,
+        "name": "Santhome Cathedral",
+        "description": "Historic Catholic church."
+      },
+      {
+        "id": 3,
+        "name": "Kapaleeshwarar Temple",
+        "description": "Dravidian-style temple."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Bangalore",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Cubbon Park",
+        "description": "Green oasis in central Bangalore."
+      },
+      {
+        "id": 2,
+        "name": "Vidhana Soudha",
+        "description": "State legislature building."
+      },
+      {
+        "id": 3,
+        "name": "Visvesvaraya Museum",
+        "description": "Science & tech museum."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Hyderabad",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Charminar",
+        "description": "Famous monument and mosque."
+      },
+      {
+        "id": 2,
+        "name": "Laad Bazaar",
+        "description": "Historic market."
+      },
+      {
+        "id": 3,
+        "name": "Mecca Masjid",
+        "description": "One of India’s largest mosques."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Mysore",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Mysore Palace",
+        "description": "Stunning Indo-Saracenic palace."
+      },
+      {
+        "id": 2,
+        "name": "St. Philomena’s Church",
+        "description": "Neo-Gothic Catholic church."
+      },
+      {
+        "id": 3,
+        "name": "Devaraja Market",
+        "description": "Historic local market."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Kochi",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Chinese Fishing Nets",
+        "description": "Iconic sunset point."
+      },
+      {
+        "id": 2,
+        "name": "Fort Kochi Beach",
+        "description": "Next to the nets."
+      },
+      {
+        "id": 3,
+        "name": "St. Francis Church",
+        "description": "Oldest European church in India."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Kolkata",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Victoria Memorial",
+        "description": "Iconic marble museum & gardens."
+      },
+      {
+        "id": 2,
+        "name": "St. Paul’s Cathedral",
+        "description": "Neo-Gothic Anglican cathedral."
+      },
+      {
+        "id": 3,
+        "name": "Birla Planetarium",
+        "description": "One of Asia’s largest."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Bhubaneswar",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Lingaraj Temple",
+        "description": "Ancient Hindu temple."
+      },
+      {
+        "id": 2,
+        "name": "Mukteswara Temple",
+        "description": "Carved sandstone temple."
+      },
+      {
+        "id": 3,
+        "name": "Rajarani Temple",
+        "description": "Temple of love sculptures."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Shillong",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ward’s Lake",
+        "description": "Scenic lake with gardens."
+      },
+      {
+        "id": 2,
+        "name": "Police Bazaar",
+        "description": "Main shopping hub."
+      },
+      {
+        "id": 3,
+        "name": "Cathedral of Mary Help of Christians",
+        "description": "Beautiful cathedral."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Gangtok",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "MG Marg",
+        "description": "Pedestrian shopping street."
+      },
+      {
+        "id": 2,
+        "name": "Enchey Monastery",
+        "description": "Buddhist monastery."
+      },
+      {
+        "id": 3,
+        "name": "Namgyal Institute of Tibetology",
+        "description": "Tibetan culture museum."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Guwahati",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Kamakhya Temple",
+        "description": "Important Shakti Peeth."
+      },
+      {
+        "id": 2,
+        "name": "Umananda Island",
+        "description": "Small island temple."
+      },
+      {
+        "id": 3,
+        "name": "Assam State Museum",
+        "description": "History & culture exhibits."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Lucknow",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Bara Imambara",
+        "description": "Massive historic complex with Bhool Bhulaiya."
+      },
+      {
+        "id": 2,
+        "name": "Chota Imambara",
+        "description": "Beautifully decorated Shia monument."
+      },
+      {
+        "id": 3,
+        "name": "Rumi Darwaza",
+        "description": "Iconic Mughal gateway."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Kanpur",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Kanpur Memorial Church",
+        "description": "Gothic-style memorial."
+      },
+      {
+        "id": 2,
+        "name": "Phool Bagh",
+        "description": "Historic garden complex."
+      },
+      {
+        "id": 3,
+        "name": "Moti Jheel",
+        "description": "Lake and recreation spot."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Bhopal",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Taj-ul-Masajid",
+        "description": "One of the largest mosques in India."
+      },
+      {
+        "id": 2,
+        "name": "Bharat Bhavan",
+        "description": "Multidisciplinary arts complex."
+      },
+      {
+        "id": 3,
+        "name": "Shaukat Mahal",
+        "description": "Fusion Indo-European palace."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Indore",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Rajwada Palace",
+        "description": "Holkar dynasty palace."
+      },
+      {
+        "id": 2,
+        "name": "Krishnapura Chhatris",
+        "description": "Historic cenotaphs."
+      },
+      {
+        "id": 3,
+        "name": "Sarafa Bazaar",
+        "description": "Night food market."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Nagpur",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Deekshabhoomi",
+        "description": "Buddhist monument and stupa."
+      },
+      {
+        "id": 2,
+        "name": "Futala Lake",
+        "description": "Popular hangout by the lake."
+      },
+      {
+        "id": 3,
+        "name": "Sitabuldi Fort",
+        "description": "Historic fort in central Nagpur."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Patna",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Golghar",
+        "description": "Granary with panoramic views."
+      },
+      {
+        "id": 2,
+        "name": "Patna Museum",
+        "description": "Archaeological and historical exhibits."
+      },
+      {
+        "id": 3,
+        "name": "Gandhi Maidan",
+        "description": "Historic ground for gatherings."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Ranchi",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ranchi Lake",
+        "description": "Scenic artificial lake."
+      },
+      {
+        "id": 2,
+        "name": "Tagore Hill",
+        "description": "Hill associated with Rabindranath Tagore."
+      },
+      {
+        "id": 3,
+        "name": "Rock Garden",
+        "description": "Garden with sculptures & views."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Jodhpur",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Mehrangarh Fort",
+        "description": "Majestic hilltop fort."
+      },
+      {
+        "id": 2,
+        "name": "Jaswant Thada",
+        "description": "Marble cenotaph."
+      },
+      {
+        "id": 3,
+        "name": "Clock Tower & Sardar Market",
+        "description": "Bustling bazaar."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Jaisalmer",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Jaisalmer Fort",
+        "description": "Living fort with houses & temples."
+      },
+      {
+        "id": 2,
+        "name": "Patwon Ki Haveli",
+        "description": "Cluster of ornate havelis."
+      },
+      {
+        "id": 3,
+        "name": "Salim Singh Ki Haveli",
+        "description": "Historic haveli with unique design."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Leh",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Leh Palace",
+        "description": "17th-century palace overlooking town."
+      },
+      {
+        "id": 2,
+        "name": "Shanti Stupa",
+        "description": "White-domed Buddhist stupa."
+      },
+      {
+        "id": 3,
+        "name": "Main Bazaar",
+        "description": "Shopping hub for handicrafts."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Srinagar",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Dal Lake",
+        "description": "Shikara rides & houseboats."
+      },
+      {
+        "id": 2,
+        "name": "Shankaracharya Temple",
+        "description": "Hilltop Hindu temple."
+      },
+      {
+        "id": 3,
+        "name": "Mughal Gardens",
+        "description": "Terraced gardens by the lake."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Haridwar",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Har Ki Pauri",
+        "description": "Famous ghat on the Ganges."
+      },
+      {
+        "id": 2,
+        "name": "Mansa Devi Temple",
+        "description": "Popular hilltop temple."
+      },
+      {
+        "id": 3,
+        "name": "Bharat Mata Mandir",
+        "description": "Temple dedicated to Mother India."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Rishikesh",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Laxman Jhula",
+        "description": "Suspension bridge over Ganga."
+      },
+      {
+        "id": 2,
+        "name": "Ram Jhula",
+        "description": "Another iconic suspension bridge."
+      },
+      {
+        "id": 3,
+        "name": "Triveni Ghat",
+        "description": "Evening Ganga aarti."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Madurai",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Meenakshi Amman Temple",
+        "description": "Dravidian-style temple complex."
+      },
+      {
+        "id": 2,
+        "name": "Thirumalai Nayakkar Mahal",
+        "description": "17th-century palace."
+      },
+      {
+        "id": 3,
+        "name": "Puthu Mandapam",
+        "description": "Historic shopping arcade."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Thiruvananthapuram",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Padmanabhaswamy Temple",
+        "description": "Richest Hindu temple in the world."
+      },
+      {
+        "id": 2,
+        "name": "Napier Museum",
+        "description": "Art & natural history museum."
+      },
+      {
+        "id": 3,
+        "name": "Shankumugham Beach",
+        "description": "Popular beach in city."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Pondicherry",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Promenade Beach",
+        "description": "Scenic seaside walk."
+      },
+      {
+        "id": 2,
+        "name": "Aurobindo Ashram",
+        "description": "Spiritual community."
+      },
+      {
+        "id": 3,
+        "name": "French Quarter",
+        "description": "Colonial architecture and cafes."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Darjeeling",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Darjeeling Himalayan Railway Station",
+        "description": "Toy train UNESCO site."
+      },
+      {
+        "id": 2,
+        "name": "Chowrasta Mall",
+        "description": "Main town square."
+      },
+      {
+        "id": 3,
+        "name": "Observatory Hill",
+        "description": "Hilltop temples and views."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Shimla",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "The Ridge",
+        "description": "Open space in city center."
+      },
+      {
+        "id": 2,
+        "name": "Christ Church",
+        "description": "Neo-Gothic landmark church."
+      },
+      {
+        "id": 3,
+        "name": "Mall Road",
+        "description": "Shopping and leisure street."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Manali",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Hadimba Devi Temple",
+        "description": "Wooden temple in forest."
+      },
+      {
+        "id": 2,
+        "name": "Mall Road",
+        "description": "Main shopping street."
+      },
+      {
+        "id": 3,
+        "name": "Manu Temple",
+        "description": "Temple dedicated to sage Manu."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Gwalior",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Gwalior Fort",
+        "description": "Hilltop fort complex."
+      },
+      {
+        "id": 2,
+        "name": "Sas Bahu Temples",
+        "description": "Intricately carved temples."
+      },
+      {
+        "id": 3,
+        "name": "Man Singh Palace",
+        "description": "Colorful palace inside fort."
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Aurangabad",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Bibi Ka Maqbara",
+        "description": "Mini Taj Mahal of the Deccan."
+      },
+      {
+        "id": 2,
+        "name": "Panchakki",
+        "description": "17th-century water mill."
+      },
+      {
+        "id": 3,
+        "name": "Aurangabad Caves",
+        "description": "Buddhist caves near city."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Ajmer",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Ajmer Sharif Dargah",
+        "description": "Shrine of Khwaja Moinuddin Chishti."
+      },
+      {
+        "id": 2,
+        "name": "Adhai Din Ka Jhonpra",
+        "description": "Historic mosque with Indo-Islamic style."
+      },
+      {
+        "id": 3,
+        "name": "Ana Sagar Lake",
+        "description": "Scenic artificial lake."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Alappuzha (Alleppey)",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Alappuzha Beach",
+        "description": "Popular beach with old pier."
+      },
+      {
+        "id": 2,
+        "name": "Alappuzha Lighthouse",
+        "description": "Historic lighthouse with views."
+      },
+      {
+        "id": 3,
+        "name": "Mullakkal Temple",
+        "description": "Traditional temple in town."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Coimbatore",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Marudamalai Temple",
+        "description": "Hill temple dedicated to Murugan."
+      },
+      {
+        "id": 2,
+        "name": "VOC Park & Zoo",
+        "description": "Recreational park & zoo."
+      },
+      {
+        "id": 3,
+        "name": "Gass Forest Museum",
+        "description": "Natural history museum."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Tirupati",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Sri Venkateswara Temple",
+        "description": "One of the richest temples in the world."
+      },
+      {
+        "id": 2,
+        "name": "Kapila Theertham",
+        "description": "Sacred waterfall and temple."
+      },
+      {
+        "id": 3,
+        "name": "ISKCON Tirupati",
+        "description": "Hare Krishna temple."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Chandigarh",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Rock Garden",
+        "description": "Sculpture garden by Nek Chand."
+      },
+      {
+        "id": 2,
+        "name": "Sukhna Lake",
+        "description": "Artificial lake with boating."
+      },
+      {
+        "id": 3,
+        "name": "Capitol Complex",
+        "description": "Le Corbusier’s modernist masterpiece."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Vadodara",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Laxmi Vilas Palace",
+        "description": "Lavish royal residence."
+      },
+      {
+        "id": 2,
+        "name": "Sayaji Baug",
+        "description": "Public garden with zoo & museum."
+      },
+      {
+        "id": 3,
+        "name": "Baroda Museum",
+        "description": "Art, archaeology & natural history."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Puri",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Jagannath Temple",
+        "description": "One of the Char Dham pilgrimage sites."
+      },
+      {
+        "id": 2,
+        "name": "Puri Beach",
+        "description": "Sacred & scenic beach."
+      },
+      {
+        "id": 3,
+        "name": "Swargadwar Ghat",
+        "description": "Hindu cremation ghat."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Amaravati",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Amaravati Stupa",
+        "description": "Ancient Buddhist stupa site."
+      },
+      {
+        "id": 2,
+        "name": "Amaralingeswara Temple",
+        "description": "Shiva temple on Krishna river."
+      },
+      {
+        "id": 3,
+        "name": "Kalachakra Museum",
+        "description": "Buddhist art and culture."
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Allahabad (Prayagraj)",
+    "radius": "1 km walking radius",
+    "places": [
+      {
+        "id": 1,
+        "name": "Triveni Sangam",
+        "description": "Confluence of Ganga, Yamuna & Saraswati."
+      },
+      {
+        "id": 2,
+        "name": "Allahabad Fort",
+        "description": "Mughal-era fort by Akbar."
+      },
+      {
+        "id": 3,
+        "name": "Anand Bhavan",
+        "description": "Nehru family residence museum."
+      }
+    ]
+  }
+]
