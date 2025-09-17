@@ -7,22 +7,30 @@
       {
         "id": 1,
         "name": "India Gate",
-        "description": "War memorial and iconic landmark."
+        "description": "War memorial and iconic landmark.",
+        "restaurants": ["Kwality Restaurant", "Gulati Restaurant"],
+        "hotels": ["The Imperial", "Le Meridien"]
       },
       {
         "id": 2,
         "name": "Rashtrapati Bhavan",
-        "description": "Official residence of the President."
+        "description": "Official residence of the President.",
+        "restaurants": ["The Potbelly Rooftop Cafe"],
+        "hotels": ["Taj Palace"]
       },
       {
         "id": 3,
         "name": "Rajpath",
-        "description": "Ceremonial boulevard in central Delhi."
+        "description": "Ceremonial boulevard in central Delhi.",
+        "restaurants": ["Masala Library"],
+        "hotels": ["The Claridges"]
       },
       {
         "id": 4,
         "name": "National Museum",
-        "description": "Showcases India’s rich history."
+        "description": "Showcases India’s rich history.",
+        "restaurants": ["Cafe Lota"],
+        "hotels": ["The Park"]
       }
     ]
   },
@@ -34,17 +42,23 @@
       {
         "id": 1,
         "name": "Taj Mahal",
-        "description": "One of the Seven Wonders of the World."
+        "description": "One of the Seven Wonders of the World.",
+        "restaurants": ["Esphahan", "Pinch of Spice"],
+        "hotels": ["The Oberoi Amarvilas", "ITC Mughal"]
       },
       {
         "id": 2,
         "name": "Agra Fort",
-        "description": "UNESCO World Heritage site."
+        "description": "UNESCO World Heritage site.",
+        "restaurants": ["Peshawri", "Joney's Place"],
+        "hotels": ["Hotel Clarks Shiraz", "Taj Hotel & Convention Centre"]
       },
       {
         "id": 3,
         "name": "Mehtab Bagh",
-        "description": "Garden with Taj Mahal views."
+        "description": "Garden with Taj Mahal views.",
+        "restaurants": ["The Silk Route Restaurant"],
+        "hotels": ["Hotel Taj Resorts"]
       }
     ]
   },
@@ -56,22 +70,30 @@
       {
         "id": 1,
         "name": "Hawa Mahal",
-        "description": "Palace of Winds."
+        "description": "Palace of Winds.",
+        "restaurants": ["LMB Restaurant", "Shree Balaji Restaurant"],
+        "hotels": ["Rambagh Palace", "Hotel Pearl Palace"]
       },
       {
         "id": 2,
         "name": "City Palace",
-        "description": "Royal residence and museum."
+        "description": "Royal residence and museum.",
+        "restaurants": ["Baradari Restaurant"],
+        "hotels": ["Alsisar Haveli"]
       },
       {
         "id": 3,
         "name": "Jantar Mantar",
-        "description": "Astronomical observatory."
+        "description": "Astronomical observatory.",
+        "restaurants": ["The Forresta Kitchen & Bar"],
+        "hotels": ["Umaid Bhawan Palace"]
       },
       {
         "id": 4,
         "name": "Johari Bazaar",
-        "description": "Jewelry & textiles market."
+        "description": "Jewelry & textiles market.",
+        "restaurants": ["Rawat Misthan Bhandar"],
+        "hotels": ["Hotel Arya Niwas"]
       }
     ]
   },
@@ -83,17 +105,23 @@
       {
         "id": 1,
         "name": "Golden Temple",
-        "description": "Most sacred Sikh shrine."
+        "description": "Most sacred Sikh shrine.",
+        "restaurants": ["Bharawan Da Dhaba", "Kesar Da Dhaba"],
+        "hotels": ["Hyatt Regency Amritsar", "Ramada Amritsar"]
       },
       {
         "id": 2,
         "name": "Jallianwala Bagh",
-        "description": "Historic massacre site."
+        "description": "Historic massacre site.",
+        "restaurants": ["Brothers' Dhaba"],
+        "hotels": ["Hotel Ritz Plaza"]
       },
       {
         "id": 3,
         "name": "Partition Museum",
-        "description": "History of India’s partition."
+        "description": "History of India’s partition.",
+        "restaurants": ["Ziva All Day Dining"],
+        "hotels": ["Fairfield by Marriott"]
       }
     ]
   },
@@ -105,17 +133,23 @@
       {
         "id": 1,
         "name": "Kashi Vishwanath Temple",
-        "description": "One of 12 Jyotirlingas."
+        "description": "One of 12 Jyotirlingas.",
+        "restaurants": ["Kashi Chaat Bhandar", "Blue Lassi Cafe"],
+        "hotels": ["BrijRama Palace", "Taj Nadesar Palace"]
       },
       {
         "id": 2,
         "name": "Dashashwamedh Ghat",
-        "description": "Main ghat for Ganga Aarti."
+        "description": "Main ghat for Ganga Aarti.",
+        "restaurants": ["Dosa Cafe"],
+        "hotels": ["Hotel Alka"]
       },
       {
         "id": 3,
         "name": "Manikarnika Ghat",
-        "description": "Sacred cremation ghat."
+        "description": "Sacred cremation ghat.",
+        "restaurants": ["Brown Bread Bakery"],
+        "hotels": ["Palace on Ganges"]
       }
     ]
   },
@@ -127,17 +161,23 @@
       {
         "id": 1,
         "name": "Gateway of India",
-        "description": "Colonial-era monument."
+        "description": "Colonial-era monument.",
+        "restaurants": ["Leopold Cafe", "Bademiya"],
+        "hotels": ["The Taj Mahal Palace", "Trident Nariman Point"]
       },
       {
         "id": 2,
         "name": "Taj Mahal Palace Hotel",
-        "description": "Luxury heritage hotel."
+        "description": "Luxury heritage hotel.",
+        "restaurants": ["Wasabi by Morimoto"],
+        "hotels": ["The Oberoi Mumbai"]
       },
       {
         "id": 3,
         "name": "Colaba Causeway",
-        "description": "Street shopping hub."
+        "description": "Street shopping hub.",
+        "restaurants": ["Cafe Mondegar"],
+        "hotels": ["Fariyas Hotel"]
       }
     ]
   },
@@ -149,17 +189,23 @@
       {
         "id": 1,
         "name": "Shaniwar Wada",
-        "description": "Historic Maratha fort."
+        "description": "Historic Maratha fort.",
+        "restaurants": ["Vaishali Restaurant", "Kayani Bakery"],
+        "hotels": ["JW Marriott Pune", "The Westin Pune"]
       },
       {
         "id": 2,
         "name": "Dagdusheth Halwai Ganpati",
-        "description": "Famous Ganesh temple."
+        "description": "Famous Ganesh temple.",
+        "restaurants": ["Shabree Restaurant"],
+        "hotels": ["Hotel Sagar Plaza"]
       },
       {
         "id": 3,
         "name": "Raja Dinkar Kelkar Museum",
-        "description": "Museum of art & culture."
+        "description": "Museum of art & culture.",
+        "restaurants": ["Sukanta Pure Veg"],
+        "hotels": ["Hotel Aurora Towers"]
       }
     ]
   },
@@ -171,17 +217,23 @@
       {
         "id": 1,
         "name": "City Palace",
-        "description": "Royal palace complex."
+        "description": "Royal palace complex.",
+        "restaurants": ["Ambrai Restaurant", "Upre by 1559 AD"],
+        "hotels": ["Taj Lake Palace", "The Leela Palace Udaipur"]
       },
       {
         "id": 2,
         "name": "Lake Pichola",
-        "description": "Scenic lake with palaces."
+        "description": "Scenic lake with palaces.",
+        "restaurants": ["Jheel's Ginger Coffee Bar & Bakery"],
+        "hotels": ["Hotel Lakend"]
       },
       {
         "id": 3,
         "name": "Jagdish Temple",
-        "description": "Indo-Aryan style temple."
+        "description": "Indo-Aryan style temple.",
+        "restaurants": ["Millets of Mewar"],
+        "hotels": ["Trident Udaipur"]
       }
     ]
   },
@@ -193,17 +245,23 @@
       {
         "id": 1,
         "name": "Sabarmati Ashram",
-        "description": "Gandhi’s residence."
+        "description": "Gandhi’s residence.",
+        "restaurants": ["Agashiye", "Swati Snacks"],
+        "hotels": ["The House of MG", "Hyatt Regency Ahmedabad"]
       },
       {
         "id": 2,
         "name": "Sidi Saiyyed Mosque",
-        "description": "Famous stone lattice windows."
+        "description": "Famous stone lattice windows.",
+        "restaurants": ["Lucky Restaurant"],
+        "hotels": ["Lemon Tree Premier"]
       },
       {
         "id": 3,
         "name": "Jama Masjid",
-        "description": "Historic mosque in old city."
+        "description": "Historic mosque in old city.",
+        "restaurants": ["Manek Chowk Night Market"],
+        "hotels": ["Hotel El Dorado"]
       }
     ]
   },
@@ -215,17 +273,23 @@
       {
         "id": 1,
         "name": "Basilica of Bom Jesus",
-        "description": "UNESCO World Heritage church."
+        "description": "UNESCO World Heritage church.",
+        "restaurants": ["Vinayak Family Restaurant", "Mum's Kitchen"],
+        "hotels": ["Vivanta Goa", "The Crown Goa"]
       },
       {
         "id": 2,
         "name": "Se Cathedral",
-        "description": "Largest church in Asia."
+        "description": "Largest church in Asia.",
+        "restaurants": ["Martin's Corner"],
+        "hotels": ["ITC Grand Goa"]
       },
       {
         "id": 3,
         "name": "Church of St. Cajetan",
-        "description": "Modeled after St. Peter’s Basilica."
+        "description": "Modeled after St. Peter’s Basilica.",
+        "restaurants": ["Fisherman's Wharf"],
+        "hotels": ["Cidade de Goa"]
       }
     ]
   },
@@ -237,17 +301,23 @@
       {
         "id": 1,
         "name": "Marina Beach",
-        "description": "Longest urban beach in India."
+        "description": "Longest urban beach in India.",
+        "restaurants": ["Murugan Idli Shop", "Sandy's"],
+        "hotels": ["Taj Club House", "The Leela Palace Chennai"]
       },
       {
         "id": 2,
         "name": "Santhome Cathedral",
-        "description": "Historic Catholic church."
+        "description": "Historic Catholic church.",
+        "restaurants": ["Amethyst Cafe"],
+        "hotels": ["Hotel Savera"]
       },
       {
         "id": 3,
         "name": "Kapaleeshwarar Temple",
-        "description": "Dravidian-style temple."
+        "description": "Dravidian-style temple.",
+        "restaurants": ["Mathura Restaurant"],
+        "hotels": ["The Residency Towers"]
       }
     ]
   },
@@ -259,17 +329,23 @@
       {
         "id": 1,
         "name": "Cubbon Park",
-        "description": "Green oasis in central Bangalore."
+        "description": "Green oasis in central Bangalore.",
+        "restaurants": ["MTR 1924", "Koshy's"],
+        "hotels": ["The Oberoi Bengaluru", "Taj West End"]
       },
       {
         "id": 2,
         "name": "Vidhana Soudha",
-        "description": "State legislature building."
+        "description": "State legislature building.",
+        "restaurants": ["The Only Place"],
+        "hotels": ["ITC Gardenia"]
       },
       {
         "id": 3,
         "name": "Visvesvaraya Museum",
-        "description": "Science & tech museum."
+        "description": "Science & tech museum.",
+        "restaurants": ["Truffles"],
+        "hotels": ["The Park Bangalore"]
       }
     ]
   },
@@ -281,17 +357,23 @@
       {
         "id": 1,
         "name": "Charminar",
-        "description": "Famous monument and mosque."
+        "description": "Famous monument and mosque.",
+        "restaurants": ["Shadab Hotel", "Pista House"],
+        "hotels": ["Taj Falaknuma Palace", "ITC Kakatiya"]
       },
       {
         "id": 2,
         "name": "Laad Bazaar",
-        "description": "Historic market."
+        "description": "Historic market.",
+        "restaurants": ["Cafe Bahar"],
+        "hotels": ["Hotel Shadab"]
       },
       {
         "id": 3,
         "name": "Mecca Masjid",
-        "description": "One of India’s largest mosques."
+        "description": "One of India’s largest mosques.",
+        "restaurants": ["Paradise Biryani"],
+        "hotels": ["Hotel Minerva Grand"]
       }
     ]
   },
@@ -303,17 +385,23 @@
       {
         "id": 1,
         "name": "Mysore Palace",
-        "description": "Stunning Indo-Saracenic palace."
+        "description": "Stunning Indo-Saracenic palace.",
+        "restaurants": ["RRR Restaurant", "Mylari"],
+        "hotels": ["Radisson Blu Plaza", "Lalitha Mahal Palace Hotel"]
       },
       {
         "id": 2,
         "name": "St. Philomena’s Church",
-        "description": "Neo-Gothic Catholic church."
+        "description": "Neo-Gothic Catholic church.",
+        "restaurants": ["Oyster Bay"],
+        "hotels": ["Hotel Sandesh The Prince"]
       },
       {
         "id": 3,
         "name": "Devaraja Market",
-        "description": "Historic local market."
+        "description": "Historic local market.",
+        "restaurants": ["Hotel Original Mylari"],
+        "hotels": ["Royal Orchid Metropole"]
       }
     ]
   },
@@ -325,17 +413,23 @@
       {
         "id": 1,
         "name": "Chinese Fishing Nets",
-        "description": "Iconic sunset point."
+        "description": "Iconic sunset point.",
+        "restaurants": ["Dal Roti", "Kashi Art Cafe"],
+        "hotels": ["Taj Malabar Resort", "Brunton Boatyard"]
       },
       {
         "id": 2,
         "name": "Fort Kochi Beach",
-        "description": "Next to the nets."
+        "description": "Next to the nets.",
+        "restaurants": ["Fusion Bay"],
+        "hotels": ["Old Harbour Hotel"]
       },
       {
         "id": 3,
         "name": "St. Francis Church",
-        "description": "Oldest European church in India."
+        "description": "Oldest European church in India.",
+        "restaurants": ["The Asian Kitchen by Tokyo Bay"],
+        "hotels": ["Fragrant Nature Kochi"]
       }
     ]
   },
@@ -347,17 +441,23 @@
       {
         "id": 1,
         "name": "Victoria Memorial",
-        "description": "Iconic marble museum & gardens."
+        "description": "Iconic marble museum & gardens.",
+        "restaurants": ["6 Ballygunge Place", "Peter Cat"],
+        "hotels": ["The Oberoi Grand", "Taj Bengal"]
       },
       {
         "id": 2,
         "name": "St. Paul’s Cathedral",
-        "description": "Neo-Gothic Anglican cathedral."
+        "description": "Neo-Gothic Anglican cathedral.",
+        "restaurants": ["Flurys"],
+        "hotels": ["The Park Kolkata"]
       },
       {
         "id": 3,
         "name": "Birla Planetarium",
-        "description": "One of Asia’s largest."
+        "description": "One of Asia’s largest.",
+        "restaurants": ["Barbeque Nation"],
+        "hotels": ["Kenilworth Hotel"]
       }
     ]
   },

@@ -4,6 +4,7 @@ function App() {
   const [cities, setCities] = useState([]);
   const [search, setSearch] = useState("");
   const [selectedCity, setSelectedCity] = useState(null);
+  const [selectedPlace, setSelectedPlace] = useState(null); // New state for selected place
   const [editMode, setEditMode] = useState(false);
   const [editCity, setEditCity] = useState(null);
   const [editError, setEditError] = useState("");
@@ -34,6 +35,60 @@ function App() {
           place.description.toLowerCase().includes(search.toLowerCase())
       )
     : [];
+
+  // Local edit state for place's restaurants/hotels
+  const [editRestaurants, setEditRestaurants] = useState(false);
+  const [editHotels, setEditHotels] = useState(false);
+  const [restaurantsDraft, setRestaurantsDraft] = useState([]);
+  const [hotelsDraft, setHotelsDraft] = useState([]);
+
+  // When selectedPlace changes, reset edit states
+  useEffect(() => {
+    setEditRestaurants(false);
+    setEditHotels(false);
+    setRestaurantsDraft(selectedPlace?.restaurants || []);
+    setHotelsDraft(selectedPlace?.hotels || []);
+  }, [selectedPlace]);
+
+  // Save handler for restaurants/hotels
+  const handleSavePlaceEdits = async (type) => {
+    if (!selectedCity || !selectedPlace) return;
+    // Update the place in the city object
+    const updatedCity = { ...selectedCity };
+    updatedCity.places = updatedCity.places.map((p) =>
+      p.id === selectedPlace.id
+        ? {
+            ...p,
+            restaurants:
+              type === "restaurants" ? restaurantsDraft : p.restaurants,
+            hotels: type === "hotels" ? hotelsDraft : p.hotels,
+          }
+        : p
+    );
+    try {
+      const res = await fetch(
+        `https://explore-2u3c.onrender.com/api/cities/${updatedCity.id}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(updatedCity),
+        }
+      );
+      if (!res.ok) {
+        alert("Failed to update place");
+        return;
+      }
+      const updated = await res.json();
+      setCities((prev) => prev.map((c) => (c.id === updated.id ? updated : c)));
+      setSelectedCity(updated);
+      const newPlace = updated.places.find((p) => p.id === selectedPlace.id);
+      setSelectedPlace(newPlace);
+      if (type === "restaurants") setEditRestaurants(false);
+      if (type === "hotels") setEditHotels(false);
+    } catch (err) {
+      alert("Network error");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
@@ -86,7 +141,10 @@ function App() {
                 >
                   <div className="text-4xl mb-2">🏙️</div>
                   <h2 className="text-xl font-bold mb-1">{city.name}</h2>
-                  <p className="text-gray-600 text-sm">{city.radius}</p>
+                  <span className="text-gray-500 text-xs mt-1">
+                    Famous Places
+                  </span>
+                  {/* <p className="text-gray-600 text-sm">{city.radius}</p> */}
                   <span className="mt-3 text-blue-600 font-medium">
                     View Places
                   </span>
@@ -113,7 +171,7 @@ function App() {
               e.preventDefault();
               setAddError("");
               try {
-                const res = await fetch("http://localhost:5000/api/cities", {
+                const res = await fetch("https://explore-2u3c.onrender.com/api/cities", {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify(addCity),
@@ -242,7 +300,7 @@ function App() {
       )}
 
       {/* City view: Show places for selected city */}
-      {selectedCity && !editMode && (
+      {selectedCity && !editMode && !selectedPlace && (
         <div className="max-w-4xl mx-auto">
           <button
             className="mb-6 px-4 py-2 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition"
@@ -267,25 +325,203 @@ function App() {
             🚶 Famous Places in {selectedCity.name}
           </h2>
           <p className="text-center mb-6 font-medium">
-            👉 All these are within{" "}
-            <span className="font-bold">{selectedCity.radius}</span> in{" "}
-            {selectedCity.name}.
+            Please select a place to view all restaurants and hotels located
+            within a 1 km radius.
           </p>
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {filteredPlaces.length > 0 ? (
               filteredPlaces.map((place) => (
-                <div
+                <button
                   key={place.id}
-                  className="bg-white shadow-md p-4 rounded-xl hover:shadow-lg transition-shadow"
+                  className="bg-white shadow-md p-4 rounded-xl hover:shadow-lg transition-shadow text-left"
+                  onClick={() => setSelectedPlace(place)}
                 >
                   <h3 className="text-lg font-semibold mb-1">{place.name}</h3>
                   <p className="text-gray-600">{place.description}</p>
-                </div>
+                  <span className="text-blue-600 text-sm mt-2 inline-block">
+                    View Restaurants & Hotels
+                  </span>
+                </button>
               ))
             ) : (
               <div className="col-span-full text-center text-gray-500">
                 No places found.
               </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Place details view: Show restaurants and hotels for selected place */}
+      {selectedCity && selectedPlace && !editMode && (
+        <div className="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-lg mt-6">
+          <button
+            className="mb-4 px-4 py-2 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 transition"
+            onClick={() => setSelectedPlace(null)}
+          >
+            ← Back to Places
+          </button>
+          <h2 className="text-2xl font-bold mb-2 text-center">
+            {selectedPlace.name}
+          </h2>
+          <p className="text-center mb-4">{selectedPlace.description}</p>
+          {/* Restaurants Section */}
+          <div className="mb-6">
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-lg font-semibold">Nearby Restaurants</h3>
+              {!editRestaurants && (
+                <button
+                  className="text-blue-600 hover:underline text-sm"
+                  onClick={() => {
+                    setEditRestaurants(true);
+                    setRestaurantsDraft(selectedPlace.restaurants || []);
+                  }}
+                >
+                  Edit
+                </button>
+              )}
+            </div>
+            {editRestaurants ? (
+              <div>
+                {restaurantsDraft.map((r, i) => (
+                  <div key={i} className="flex gap-2 mb-2">
+                    <input
+                      className="border px-2 py-1 rounded flex-1"
+                      value={r}
+                      onChange={(e) => {
+                        const arr = [...restaurantsDraft];
+                        arr[i] = e.target.value;
+                        setRestaurantsDraft(arr);
+                      }}
+                    />
+                    <button
+                      className="text-red-600 font-bold px-2"
+                      onClick={() => {
+                        setRestaurantsDraft(
+                          restaurantsDraft.filter((_, idx) => idx !== i)
+                        );
+                      }}
+                      type="button"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ))}
+                <button
+                  className="mt-2 px-3 py-1 bg-green-100 text-green-800 rounded hover:bg-green-200"
+                  type="button"
+                  onClick={() => setRestaurantsDraft([...restaurantsDraft, ""])}
+                >
+                  + Add Restaurant
+                </button>
+                <div className="flex gap-2 mt-3">
+                  <button
+                    className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
+                    type="button"
+                    onClick={() => handleSavePlaceEdits("restaurants")}
+                  >
+                    Save
+                  </button>
+                  <button
+                    className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
+                    type="button"
+                    onClick={() => {
+                      setEditRestaurants(false);
+                      setRestaurantsDraft(selectedPlace.restaurants || []);
+                    }}
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            ) : selectedPlace.restaurants &&
+              selectedPlace.restaurants.length > 0 ? (
+              <ul className="list-disc list-inside">
+                {selectedPlace.restaurants.map((r, i) => (
+                  <li key={i}>{r}</li>
+                ))}
+              </ul>
+            ) : (
+              <div className="text-gray-500">No restaurants listed.</div>
+            )}
+          </div>
+          {/* Hotels Section */}
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-lg font-semibold">Nearby Hotels</h3>
+              {!editHotels && (
+                <button
+                  className="text-blue-600 hover:underline text-sm"
+                  onClick={() => {
+                    setEditHotels(true);
+                    setHotelsDraft(selectedPlace.hotels || []);
+                  }}
+                >
+                  Edit
+                </button>
+              )}
+            </div>
+            {editHotels ? (
+              <div>
+                {hotelsDraft.map((h, i) => (
+                  <div key={i} className="flex gap-2 mb-2">
+                    <input
+                      className="border px-2 py-1 rounded flex-1"
+                      value={h}
+                      onChange={(e) => {
+                        const arr = [...hotelsDraft];
+                        arr[i] = e.target.value;
+                        setHotelsDraft(arr);
+                      }}
+                    />
+                    <button
+                      className="text-red-600 font-bold px-2"
+                      onClick={() => {
+                        setHotelsDraft(
+                          hotelsDraft.filter((_, idx) => idx !== i)
+                        );
+                      }}
+                      type="button"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ))}
+                <button
+                  className="mt-2 px-3 py-1 bg-green-100 text-green-800 rounded hover:bg-green-200"
+                  type="button"
+                  onClick={() => setHotelsDraft([...hotelsDraft, ""])}
+                >
+                  + Add Hotel
+                </button>
+                <div className="flex gap-2 mt-3">
+                  <button
+                    className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
+                    type="button"
+                    onClick={() => handleSavePlaceEdits("hotels")}
+                  >
+                    Save
+                  </button>
+                  <button
+                    className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
+                    type="button"
+                    onClick={() => {
+                      setEditHotels(false);
+                      setHotelsDraft(selectedPlace.hotels || []);
+                    }}
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            ) : selectedPlace.hotels && selectedPlace.hotels.length > 0 ? (
+              <ul className="list-disc list-inside">
+                {selectedPlace.hotels.map((h, i) => (
+                  <li key={i}>{h}</li>
+                ))}
+              </ul>
+            ) : (
+              <div className="text-gray-500">No hotels listed.</div>
             )}
           </div>
         </div>
@@ -304,7 +540,7 @@ function App() {
               setEditError("");
               try {
                 const res = await fetch(
-                  `http://localhost:5000/api/cities/${editCity.id}`,
+                  `https://explore-2u3c.onrender.com/api/cities/${editCity.id}`,
                   {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },

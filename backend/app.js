@@ -23,6 +23,9 @@ try {
         id: placeId++,
         name: p.name,
         description: p.description,
+        // Add restaurants and hotels arrays, default to [] if not provided
+        restaurants: Array.isArray(p.restaurants) ? p.restaurants : [],
+        hotels: Array.isArray(p.hotels) ? p.hotels : [],
       }));
     } else {
       newCity.places = [];
@@ -57,6 +60,18 @@ app.put("/api/cities/:id", (req, res) => {
   }
   // Keep the id consistent
   updatedCity.id = cityId;
+  // Ensure places have restaurants and hotels arrays
+  if (Array.isArray(updatedCity.places)) {
+    updatedCity.places = updatedCity.places.map((p, idx) => ({
+      id: p.id || idx + 1,
+      name: p.name,
+      description: p.description,
+      restaurants: Array.isArray(p.restaurants) ? p.restaurants : [],
+      hotels: Array.isArray(p.hotels) ? p.hotels : [],
+    }));
+  } else {
+    updatedCity.places = [];
+  }
   cities[index] = updatedCity;
   // Save to file
   const fs = require("fs");
